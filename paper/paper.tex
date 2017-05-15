@@ -5,11 +5,6 @@
 \usepackage{graphicx}
 \usepackage{amssymb,amsmath,amsthm,amsfonts}
 
-\definecolor{Green}{RGB}{58, 147, 48}
-\newcommand{\fl}[1]{\textcolor{red}{\textsc{[#1 -Falk]}}}
-\newcommand{\tlg}[1]{\textcolor{blue}{\textsc{[#1 -Tom]}}}
-\newcommand{\fc}[1]{\textcolor{Green}{\textsc{[#1 -Fred]}}}
-
 \title{Helping people choose subgoals with sparse pseudo rewards}
 
 \author{
@@ -17,14 +12,6 @@ Frederick Callaway \\
 Dept. of Psychology, UC Berkeley\\
 \texttt{fredcallaway@berkeley.edu} \\
 }
-
-% The \author macro works with any number of authors. There are two commands
-% used to separate the names and addresses of multiple authors: \And and \AND.
-%
-% Using \And between authors leaves it to \LaTeX{} to determine where to break
-% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
-% puts 3 of 4 authors names on the first line, and the last on the second
-% line, try using \AND instead of \And before the third author name.
 
 \newcommand{\fix}{\marginpar{FIX}}
 \newcommand{\new}{\marginpar{NEW}}
@@ -75,6 +62,8 @@ $\;\;$
 \end{figure*}
 
 \section{Results}\label{results}
+
+Data and analysis code can be viewed at https://github.com/fredcallaway/psych205/
 
 \subsection{Score rate}
 We predicted that pseudo-rewards would either increase the quality of actions, reduce the time spent planning, or both. To capture both of these possibilities in one metric, we defined \emph{score rate} to be the average score per second. Results are plotted in Figure~\ref{fig:basic}.
