@@ -1,0 +1,9 @@
+N_PARTICIPANT,88
+BETA_RATE,-0.049
+WORSEN_RATE,2.21
+AOV_RATE_NULL,"$\chi^2(3)=nan,\ nan$"
+AOV_RATE_FULL,"$\chi^2(4)=12.62,\ p\,<\,0.001$"
+BETA_THREE,0.169
+IMPROVEMENT_THREE,8.51
+AOV_THREE_NULL,"$\chi^2(3)=nan,\ nan$"
+AOV_THREE_FULL,"$\chi^2(4)=5.61,\ p\,<\,0.05$"
