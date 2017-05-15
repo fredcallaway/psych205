@@ -35,22 +35,29 @@ Inspired by the use of \emph{shaping rewards} in reinforcement learning \cite{ng
 We recruited \NParticipant~participants on Amazon's Mechanical Turk. Participants navigated a spider through the \emph{Web of Cash} (Figure~\ref{fig:paradigm}), attempting to collect the maximum amount of money. The web was structured such that participants could only move rightwards, and only one row up or down on each step. This induces a long-term planning problem in which one may need to make a short-term suboptimal decision to reach a highly valuable state. On some trials, pseudo-rewards, displayed as stars, were presented every 1, 2, or 3 steps. Only the pseudo-rewards at the nearest such column were visible; when one of those pseudo-rewards was attained, the next round appeared. Participants were explicitly informed that the number of stars on a state was the maximum total profit one could gain starting in that state.
 
 
-\begin{figure}[t!]
-\begin{minipage}{.47\textwidth}
-    %\centering
+% \begin{figure*}[b!]
+% \begin{minipage}{.47\textwidth}
+%     %\centering
+%     \includegraphics[width=\linewidth]{figs/paradigm.png}
+%     \caption{Screenshot of the experiment: Participants control the spider with the arrow keys to maximize profit. The number of stars conveys the value of a state.}
+%     \label{fig:paradigm}
+% \end{minipage}%
+% \begin{minipage}{.1\textwidth}
+% $\;\;$
+% \end{minipage}
+% \begin{minipage}{.455\textwidth}
+%   %\centering
+%   \includegraphics[width=\linewidth]{figs/plan_time.eps}
+%   \caption{Planning time is higher on states with pseudo-rewards, indicated by stars.}
+%   \label{fig:plan-time}
+% \end{minipage}
+% \end{figure*}
+
+\begin{figure}
+    \centering
     \includegraphics[width=\linewidth]{figs/paradigm.png}
     \caption{Screenshot of the experiment: Participants control the spider with the arrow keys to maximize profit. The number of stars conveys the value of a state.}
     \label{fig:paradigm}
-\end{minipage}%
-\begin{minipage}{.1\textwidth}
-$\;\;$
-\end{minipage}
-\begin{minipage}{.455\textwidth}
-  %\centering
-  \includegraphics[width=\linewidth]{figs/plan_time.eps}
-  \caption{Planning time is higher on states with pseudo-rewards, indicated by stars.}
-  \label{fig:plan-time}
-\end{minipage}
 \end{figure}
 
 
@@ -96,6 +103,14 @@ Looking at only the difference between the 3-step and absent pseudo-reward trial
 
 
 \subsection{Reaction times}\label{planning-time}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/plan_time.eps}
+  \caption{Planning time is higher on states with pseudo-rewards, indicated by stars.}
+  \label{fig:plan-time}
+\end{figure}
+
 
 In our second analysis, we sought evidence that the pseudo-rewards induced goal-targeted planning. We defined an intuitive behavioral signature of planning based on reaction times: If a participant chooses to plan ahead at a given state, her reaction time will be higher than average; however, once a plan has been formed, she can quickly execute the full sequence. Thus, if the pseudo-rewards induced subgoal-targeted planning, we would expect to see longer reaction times on states with pseudo-rewards because participants would need to re-plan after reaching the pseudo-reward induced subgoal. Log reaction times broken down by step and pseudo-reward frequency are shown in Figure~\ref{fig:plan-time}. We excluded the first action (the first column in Figure~\ref{fig:plan-time}) from our analysis because one would expect unusually high reaction time at the first state regardless of the presence of pseudo-rewards.
 
